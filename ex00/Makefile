@@ -1,6 +1,6 @@
 SRCS	= $(shell find . -type f -name "*.c")
 CC		= gcc
-CFLAGS 	= -Wall -Wextra -Werror -fsanitize=address
+CFLAGS 	= -Wall -Wextra -Werror -fsanitize=address -g3
 NAME	= rush-02
 
 ${NAME}: all
