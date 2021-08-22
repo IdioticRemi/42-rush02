@@ -1,0 +1,6 @@
+rush-02
+*.out
+*.o
+*.a
+.DS_Store
+.idea
