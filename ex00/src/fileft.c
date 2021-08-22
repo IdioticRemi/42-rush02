@@ -24,7 +24,7 @@ t_bool	ft_file_exists(t_str path)
 	return (res);
 }
 
-t_uint 	ft_filelen(t_str path)
+t_uint	ft_filelen(t_str path)
 {
 	t_uint	filelen;
 	int		fd;

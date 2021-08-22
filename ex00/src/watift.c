@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   watift.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tschlege <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/22 17:17:44 by tschlege          #+#    #+#             */
+/*   Updated: 2021/08/22 17:17:46 by tschlege         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <rush02.h>
 
-t_str ft_watisuite(t_str str)
+t_str	ft_watisuite(t_str str)
 {
-	int	str_len;
-	int zero_nb;
-	t_str wati;
+	int		str_len;
+	int		zero_nb;
+	t_str	wati;
 
 	wati = NULL;
 	str_len = ft_strlen(str);
@@ -13,7 +25,7 @@ t_str ft_watisuite(t_str str)
 		while (zero_nb % 3)
 			zero_nb--;
 	wati = malloc(zero_nb + 2);
-	if(!wati)
+	if (!wati)
 		return (NULL);
 	wati[zero_nb + 1] = '\0';
 	while (zero_nb)
@@ -25,13 +37,13 @@ t_str ft_watisuite(t_str str)
 	return (wati);
 }
 
-t_str ft_watireste(t_str str)
+t_str	ft_watireste(t_str str)
 {
-	int str_len;
-	int nbr;
-	int zero_nb;
-	int	i;
-	t_str wati;
+	int		str_len;
+	int		nbr;
+	int		zero_nb;
+	int		i;
+	t_str	wati;
 
 	str_len = ft_strlen(str);
 	zero_nb = str_len - 1;
@@ -52,14 +64,14 @@ t_str ft_watireste(t_str str)
 	return (wati);
 }
 
-t_str ft_watidec(t_str str)
+t_str	ft_watidec(t_str str)
 {
-	t_str wati;
+	t_str	wati;
 
 	wati = malloc(3);
-	if(!wati)
+	if (!wati)
 		return (NULL);
-	if (ft_charinset(str[0], "3456789"))
+	if (ft_charinset(str[0], "23456789"))
 	{
 		wati[0] = str[0];
 		wati[1] = '0';
@@ -70,16 +82,16 @@ t_str ft_watidec(t_str str)
 	return (wati);
 }
 
-t_str ft_watiunit(t_str str)
+t_str	ft_watiunit(t_str str)
 {
-	t_str wati;
-	int ln;
+	t_str	wati;
+	int		ln;
 
 	ln = ft_strlen(str);
 	wati = malloc(3);
 	if (!wati)
 		return (NULL);
-	if (ft_charinset(str[ln - 2], "12"))
+	if (ft_charinset(str[ln - 2], "1"))
 	{
 		wati[0] = str[ln - 2];
 		wati[1] = str[ln - 1];
@@ -91,9 +103,9 @@ t_str ft_watiunit(t_str str)
 	return (wati);
 }
 
-t_uint ft_watisum(t_rush rush, t_str s)
+t_uint	ft_watisum(t_rush rush, t_str s)
 {
-	t_uint l;
+	t_uint	l;
 
 	l = 0;
 	while (ft_strlen(ft_watisuite(s)) > 3)

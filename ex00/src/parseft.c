@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parseft.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tschlege <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/22 17:14:18 by tschlege          #+#    #+#             */
+/*   Updated: 2021/08/22 17:14:28 by tschlege         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <rush02.h>
 
 t_str	ft_strnindex(t_str str, int j, char c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*str && i < j)
@@ -35,7 +47,7 @@ t_dict	ft_parseline(t_str	str)
 	}
 	dict.text[0] = '\0';
 	ft_strucat(dict.text, str, "\n");
-	return dict;
+	return (dict);
 }
 
 t_rush	ft_dictparse(t_str	dictpath)

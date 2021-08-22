@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   stringft2.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tschlege <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/22 17:16:52 by tschlege          #+#    #+#             */
+/*   Updated: 2021/08/22 17:16:55 by tschlege         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <rush02.h>
 
 t_bool	ft_strcmp(t_str s1, t_str s2)
@@ -23,8 +35,8 @@ t_bool	ft_stronlyhas(t_str str, t_str charset)
 
 t_str	ft_strscat(t_str src, t_str dest)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
