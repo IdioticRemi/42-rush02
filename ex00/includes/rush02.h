@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rush02.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tschlege <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/22 17:06:58 by tschlege          #+#    #+#             */
+/*   Updated: 2021/08/22 17:07:04 by tschlege         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef RUSH02_H
 # define RUSH02_H
 
@@ -17,7 +29,7 @@ typedef unsigned int	t_uint;
 
 typedef struct s_file {
 	t_str		content;
-	t_uint 		length;
+	t_uint		length;
 }	t_file;
 
 typedef struct s_dict {

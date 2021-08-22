@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   stringft.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tschlege <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/22 17:15:51 by tschlege          #+#    #+#             */
+/*   Updated: 2021/08/22 17:15:53 by tschlege         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <rush02.h>
 
 t_uint	ft_strlen(t_str str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -12,7 +24,7 @@ t_uint	ft_strlen(t_str str)
 
 t_uint	ft_strlenuntil(t_str str, t_str stop)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] && !ft_charinset(str[i], stop))
@@ -33,7 +45,7 @@ t_bool	ft_strhas(t_str str, t_str charset)
 
 t_uint	ft_strcount(t_str str, char c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*str)
@@ -47,8 +59,8 @@ t_uint	ft_strcount(t_str str, char c)
 
 t_str	ft_strucat(t_str dest, t_str src, t_str stop)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
